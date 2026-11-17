@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e9ddc8;
+            font-family: Georgia, serif;
+            color: #765b48;
+        }
+
+        .password-box {
+            width: 100%;
+            max-width: 420px;
+            padding: 45px 35px;
+            text-align: center;
+            background: #fff9ec;
+            border: 1px solid #e2d3bb;
+            box-shadow: 0 12px 35px rgba(80, 58, 37, 0.15);
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            color: #76543e;
+        }
+
+        p {
+            color: #a58a72;
+            line-height: 1.6;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin: 15px 0;
+            font-size: 16px;
+            text-align: center;
+            border: 1px solid #d9c7ac;
+            background: #fffdf7;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            color: #fff9ec;
+            background: #76543e;
+            border: none;
+            font-family: Georgia, serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #password-error {
+            color: #b34b43;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="password-box">
+
+        <h1>A Little Surprise ❤️</h1>
+
+        <p>Enter the password to open your birthday letter.</p>
+
+        <form id="password-form">
+
+            <input
+                type="password"
+                id="password-input"
+                placeholder="Enter password"
+                required
+            >
+
+            <button type="submit">Unlock Letter 🔓</button>
+
+            <p id="password-error"></p>
+
+        </form>
+
+    </main>
+
+    <script src="password.js"></script>
+
+</body>
+</html>
